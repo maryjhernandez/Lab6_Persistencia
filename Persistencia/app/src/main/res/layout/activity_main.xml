@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/envi"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Solicitud de Transporte de Carga"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:hint="Dirección origen"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/tipo"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de carga"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/alto"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:hint="Alto"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ancho"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:hint="Ancho"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/hora"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:hint="Hora"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/fecha"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:hint="Fecha"
+        android:inputType="date" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/guardarDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:onClick="BotonCarga"
+            android:text="Guardar datos" />
+
+
+        <Button
+            android:id="@+id/consultarDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:onClick="solicitar"
+            android:text="Consultar datos" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/daticos"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
